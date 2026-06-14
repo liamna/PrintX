@@ -1,0 +1,6 @@
+{
+  "name": "PrintX Concierge",
+  "description": "A concierge 3D printing service where users submit model links, and the service handles purchasing, printing, and shipping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

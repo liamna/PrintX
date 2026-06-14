@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "order": {
+      "title": "Order",
+      "description": "A 3D print order submission",
+      "type": "object",
+      "properties": {
+        "modelUrl": { "type": "string" },
+        "email": { "type": "string" },
+        "country": { "type": "string" },
+        "city": { "type": "string" },
+        "address": { "type": "string" },
+        "instructions": { "type": "string" },
+        "modelName": { "type": "string" },
+        "modelCost": { "type": "number" },
+        "materialCost": { "type": "number" },
+        "shippingCost": { "type": "number" },
+        "profitMargin": { "type": "number" },
+        "totalCost": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["modelUrl", "email", "totalCost"]
+    }
+  },
+  "firestore": {
+    "orders/{orderId}": {
+      "schema": "order",
+      "description": "Collection of all submitted orders"
+    }
+  }
+}
